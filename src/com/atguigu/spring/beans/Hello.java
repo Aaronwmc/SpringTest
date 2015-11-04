@@ -12,5 +12,4 @@ public class Hello {
 		this.message = message;
 	}
 
-} 
- 
+}
