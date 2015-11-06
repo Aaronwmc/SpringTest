@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[2.6.0.201103160035-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/com/atguigu/spring/autowire/beans-autowire.xml</config>
+		<config>src/com/atguigu/spring/relation/beans-relation.xml</config>
+		<config>src/com/atguigu/spring/properties/beans-properties.xml</config>
+	</configs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

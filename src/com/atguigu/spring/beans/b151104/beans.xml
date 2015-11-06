@@ -12,11 +12,10 @@
 		<constructor-arg ref="master"></constructor-arg>
 	</bean>
 	
-	<bean id="newHouse" class="com.atguigu.spring.beans.b151104.NewHouse">
+	<bean id="newHouse" class="com.atguigu.spring.beans.b151104.NewHouse" p:number="100000011r5">
 		<!-- constructor-arg value="1000001"></constructor-arg>
 		<constructor-arg value="山顶"></constructor-arg>
 		<constructor-arg ref="master"></constructor-arg-->
-		<property name="number" value="1000001"></property>
 		<property name="address" value="山腰"></property>
 		<property name="master">
 			<map>
@@ -49,14 +48,16 @@
 	</bean>
 	
 	<bean id="datasource" class="com.atguigu.spring.beans.b151104.DataSource">
-		<property name="properties">
-			<props>
-				<prop key="user">root</prop>
-				<prop key="password">123456</prop>
-				<prop key="jdbcUrl">jdbc:mysql:127.0.0.1:3306///ttte</prop>
-				<prop key="driverClass">com.mysql.jdbc.Driver</prop>
-			</props>
+		<property name="properties" ref="properties1">
+			
 		</property>
 	</bean>
+	
+	<util:properties id="properties1">
+		<prop key="user">root</prop>
+		<prop key="password">123456</prop>
+		<prop key="jdbcUrl">jdbc:mysql:127.0.0.1:3306///ttte45</prop>
+		<prop key="driverClass">com.mysql.jdbc.Driver</prop>
+	</util:properties>
 	
 </beans>
