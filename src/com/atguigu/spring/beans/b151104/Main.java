@@ -7,7 +7,10 @@ public class Main {
 	
 	public static void main(String[] args){
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/atguigu/spring/beans/b151104/beans.xml");
-		House house = (House) context.getBean("house");
-		System.out.println(house);
+		NewHouse newHouse = (NewHouse) context.getBean("newHouse");
+		System.out.println(newHouse);
+		
+		DataSource dts = (DataSource) context.getBean(DataSource.class);
+		System.out.println(dts.getProperties());
 	}
 }

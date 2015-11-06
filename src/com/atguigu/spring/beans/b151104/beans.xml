@@ -8,15 +8,55 @@
 
 	<bean id="house" class="com.atguigu.spring.beans.b151104.House">
 		<constructor-arg value="1000001"></constructor-arg>
-		<constructor-arg value="Alic"></constructor-arg>
+		<constructor-arg value="山顶"></constructor-arg>
 		<constructor-arg ref="master"></constructor-arg>
+	</bean>
+	
+	<bean id="newHouse" class="com.atguigu.spring.beans.b151104.NewHouse">
+		<!-- constructor-arg value="1000001"></constructor-arg>
+		<constructor-arg value="山顶"></constructor-arg>
+		<constructor-arg ref="master"></constructor-arg-->
+		<property name="number" value="1000001"></property>
+		<property name="address" value="山腰"></property>
+		<property name="master">
+			<map>
+				<entry key="AA" value-ref="master"></entry>
+				<entry key="BB" value-ref="master1"></entry>
+			</map>
+		</property>
 	</bean>
 		
 	<bean id="master" class="com.atguigu.spring.beans.b151104.Person">
-		<constructor-arg value="2011000022"></constructor-arg>
+		<!-- constructor-arg value="2011000022"></constructor-arg>
 		<constructor-arg value="Alic"></constructor-arg>
 		<constructor-arg value="男"></constructor-arg>
-		<constructor-arg value="26"></constructor-arg>
+		<constructor-arg value="26"></constructor-arg-->
+		<property name="number" value="2011000022"></property>
+		<property name="name" value="Alic"></property>
+		<property name="sex" value="男"></property>
+		<property name="age" value="25"></property>
+	</bean>
+	
+	<bean id="master1" class="com.atguigu.spring.beans.b151104.Person">
+		<!-- constructor-arg value="2011000022"></constructor-arg>
+		<constructor-arg value="Alic"></constructor-arg>
+		<constructor-arg value="男"></constructor-arg>
+		<constructor-arg value="26"></constructor-arg-->
+		<property name="number" value="2011000022"></property>
+		<property name="name" value="Alic"></property>
+		<property name="sex" value="男"></property>
+		<property name="age" value="25"></property>
+	</bean>
+	
+	<bean id="datasource" class="com.atguigu.spring.beans.b151104.DataSource">
+		<property name="properties">
+			<props>
+				<prop key="user">root</prop>
+				<prop key="password">123456</prop>
+				<prop key="jdbcUrl">jdbc:mysql:127.0.0.1:3306///ttte</prop>
+				<prop key="driverClass">com.mysql.jdbc.Driver</prop>
+			</props>
+		</property>
 	</bean>
 	
 </beans>

@@ -1,18 +1,20 @@
 package com.atguigu.spring.beans.b151104;
 
-public class House {
+import java.util.Map;
+
+public class NewHouse {
 
 	private String number;
 	private String address;
-	private Person master;
+	private Map<String,Person> masters;
 	
-	public House(){
+	public NewHouse(){
 		
 	}
-	public House(String number, String address, Person master) {
+	public NewHouse(String number, String address, Map<String,Person> masters) {
 		this.number = number;
 		this.address = address;
-		this.master = master;
+		this.masters = masters;
 	}
 	public String getNumber() {
 		return number;
@@ -26,16 +28,16 @@ public class House {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Person getMaster() {
-		return master;
+	public Map<String,Person> getMaster() {
+		return masters;
 	}
-	public void setMaster(Person master) {
-		this.master = master;
+	public void setMaster(Map<String,Person> masters) {
+		this.masters = masters;
 	}
 	@Override
 	public String toString() {
 		return "House [number=" + number + ", address=" + address + ", master="
-				+ master + "]";
+				+ masters + "]";
 	}
 	
 	
