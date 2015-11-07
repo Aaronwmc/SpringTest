@@ -11,6 +11,8 @@
 		<config>src/com/atguigu/spring/relation/beans-relation.xml</config>
 		<config>src/com/atguigu/spring/properties/beans-properties.xml</config>
 		<config>src/com/atguigu/spring/spel/beans-spel.xml</config>
+		<config>src/com/atguigu/spring/cycle/beans-cycle.xml</config>
+		<config>src/com/atguigu/spring/beanFactory/beans-factory.xml</config>
 	</configs>
 	<configSets>
 	</configSets>
