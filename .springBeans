@@ -13,6 +13,8 @@
 		<config>src/com/atguigu/spring/spel/beans-spel.xml</config>
 		<config>src/com/atguigu/spring/cycle/beans-cycle.xml</config>
 		<config>src/com/atguigu/spring/beanFactory/beans-factory.xml</config>
+		<config>src/com/atguigu/spring/factoryBean/bean-factoryBean.xml</config>
+		<config>src/com/atguigu/spring/annotation/beans-annotation.xml</config>
 	</configs>
 	<configSets>
 	</configSets>
