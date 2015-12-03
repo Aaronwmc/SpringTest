@@ -15,6 +15,8 @@
 		<config>src/com/atguigu/spring/beanFactory/beans-factory.xml</config>
 		<config>src/com/atguigu/spring/factoryBean/bean-factoryBean.xml</config>
 		<config>src/com/atguigu/spring/annotation/beans-annotation.xml</config>
+		<config>src/all.xml</config>
+		<config>src/com/atguigu/spring/test/p-beans.xml</config>
 	</configs>
 	<configSets>
 	</configSets>

@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<!-- 指定IOC 容器扫描的包 -->
-	<context:component-scan base-package="com.atguigu.spring.annotation" use-default-filters="false">
+	<context:component-scan base-package="com.atguigu.spring.annotation" use-default-filters="true">
 		<context:include-filter type="assignable" expression="com.atguigu.spring.annotation.repository.UserRepository"/>
 	</context:component-scan>
 </beans>

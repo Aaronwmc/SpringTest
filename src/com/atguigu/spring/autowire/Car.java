@@ -27,7 +27,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "Car [brandString=" + brand + ", price=" + price + "]";
+		return "Car [brand=" + brand + ", price=" + price + "]";
 	}
 	
 	
