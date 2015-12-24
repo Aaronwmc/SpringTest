@@ -3,13 +3,12 @@ package com.atguigu.spring.annotation.repository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRepositoryImpl implements UserRepository{
+public class UserJdbcRepository implements UserRepository {
 
 	@Override
 	public void save() {
 		// TODO Auto-generated method stub
-		System.out.println("UserRepository save");
+		System.out.println("UserJdbcRepository save...");
 	}
-	
-	
+
 }

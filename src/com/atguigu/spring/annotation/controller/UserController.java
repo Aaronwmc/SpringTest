@@ -15,6 +15,6 @@ public class UserController {
 	public void excute(){
 		System.out.println("UserController excute");
 		userService.add();
-		System.out.println(testObject);
+		//System.out.println(testObject);
 	}
 }

@@ -15,7 +15,7 @@ public class Main {
 		
 		DataSource dataSource = (DataSource) context.getBean("datasource");
 		
-		System.out.println(dataSource.getConnection());
+		System.out.println(dataSource.getConnection()); 
 	}
 
 }

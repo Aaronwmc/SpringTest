@@ -14,7 +14,7 @@
 	<bean id="car" class="com.atguigu.spring.relation.Car" p:brand="Audi" p:price="300000">
 	</bean>		
 	
-	<bean id="person" class="com.atguigu.spring.relation.Person" p:name="莉莉" p:address-ref="address1" depends-on="car">
+	<bean id="person" class="com.atguigu.spring.relation.Person" p:name="莉莉" p:address-ref="address1" p:car-ref="car" depends-on="car">
 	</bean>
 
 </beans>
