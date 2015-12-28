@@ -1,4 +1,4 @@
-package com.atguigu.spring.test;
+package com.atguigu.spring.generic;
 
 public class BaseRepository<T> {
 

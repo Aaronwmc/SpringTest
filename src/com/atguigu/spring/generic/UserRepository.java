@@ -1,4 +1,4 @@
-package com.atguigu.spring.test;
+package com.atguigu.spring.generic;
 
 import org.springframework.stereotype.Repository;
 
