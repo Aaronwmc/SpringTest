@@ -18,6 +18,7 @@
 		<config>src/com/atguigu/spring/properties/beans-properties.xml</config>
 		<config>src/com/atguigu/spring/aop/impl/beans-aopimpl.xml</config>
 		<config>src/com/atguigu/spring/generic/beans-t.xml</config>
+		<config>src/com/atguigu/spring/test/beans-generic.xml</config>
 	</configs>
 	<configSets>
 	</configSets>
